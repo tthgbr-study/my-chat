@@ -18,4 +18,3 @@ export class MessageCard extends PureComponent<{ message: MessageDto, own: boole
     }
 }
 
-// toLocaleDateString here as well

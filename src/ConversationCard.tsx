@@ -61,4 +61,3 @@ export class ConversationCard extends Component<{
     }
 }
 
-// toLocaleDateString check if there is number in NEPTUN code

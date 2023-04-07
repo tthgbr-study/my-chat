@@ -45,14 +45,10 @@ class Proxy extends EventProducer<ProxyEventMap>
     register(email: string, password: string, name: string) 
     {
         let registerPacket : OutgoingPacket = {type: "register", email: email, password: password, displayName: name, staySignedIn: false };
-        //let message = JSON.stringify({ type: "register", email: email, password: password, displayName: name, staySignedIn: false });
-        //this.ws.send(message);
         this.sendPacket(registerPacket);
     }
 
     login(email: string, password: string) {
-        //let message = JSON.stringify({ type: "login", email: email, password: password, staySignedIn: false });
-        // this.ws.send(message);
         let loginPacket : OutgoingPacket = { type: "login", email: email, password: password, staySignedIn: false };
         this.sendPacket(loginPacket);
     }
